@@ -8,7 +8,7 @@ function Car(make, speed) {
 Car.prototype.accelerate = function () {
   console.log(
     `Tốc độ hiện tại của xe ${this.make} sau khi tăng lên 10 là: ${
-      this.speed + 10
+      this.speed += 10
     } km/h`
   );
 };
@@ -17,7 +17,7 @@ Car.prototype.accelerate = function () {
 Car.prototype.brake = function () {
   console.log(
     `Tốc độ hiện tại của xe ${this.make} sau khi giảm đi 5 là: ${
-      this.speed - 5
+      this.speed -= 5
     } km/h`
   );
 };
